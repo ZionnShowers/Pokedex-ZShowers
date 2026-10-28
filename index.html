@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pokédex Fetch</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="minimum-h-screen flex flex-col items-center bg-red-600 p-4">
+  <h1 class="font-bold text-3xl flex flex-col items-center bg-white rounded p-2">Pokédex</h1>
+
+  <form id="search-form" class="flex flex-col items-center ">
+    <input class="mt-8 w-[210px] border bg-white" id="search-input" placeholder="Name or ID (e.g. pikachu, 25)" />
+    <button class="border mt-2 px-2 bg-green-500" type="submit">Search</button>
+  </form>
+  <button id="random-button" class="border mt-2 px-2 bg-gray-400" type="button">Random</button>
+
+  <img id="pokeballPic" class="w-20 mt-4" src="assets/pokeball_2d_closed.png"/>
+  <p  id="status"></p>
+  <div id="pokemon-card" class="border rounded-2xl p-4 mt-2 bg-blue-500">
+      <img id="picture" class="w-75 bg-cyan-200"/>
+      <p id="name"></p>
+    <p id="id"></p>
+
+    <p id="height"></p>
+    <p id="weight"></p>
+    <p id="types"></p>
+    <!-- <p id="types2"></p> -->
+     <p id="error"></p>
+  </div>
+
+  <!-- <h2>Team</h2>
+  <div id="team"></div> -->
+
+  <script src="script.js"></script>
+</body>
+</html>
